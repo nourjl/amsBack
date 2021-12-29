@@ -592,7 +592,7 @@ __webpack_require__.r(__webpack_exports__);
 class ArticleService {
     constructor(Http) {
         this.Http = Http;
-        this.urlArticles = 'http://localhost:8080/articles';
+        this.urlArticles = 'https://backfrontams.herokuapp.com/listArticle';
     }
     listArticles() {
         return this.Http.get(this.urlArticles + '/list');
@@ -639,7 +639,7 @@ __webpack_require__.r(__webpack_exports__);
 class ProviderService {
     constructor(Http) {
         this.Http = Http;
-        this.urlProviders = 'http://localhost:8080/providers';
+        this.urlProviders = 'https://backfrontams.herokuapp.com/listProvider';
     }
     listProviders() {
         return this.Http.get(this.urlProviders + '/list');
